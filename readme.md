@@ -27,3 +27,7 @@ Los requerimientos comprenden:
     - Pais.
     - Tipo de Usuario (No modificable)
     - Estado (No modificable)
+
+La prueba tiene un lapso de 3 días a partir de la notificación de la misma. 
+
+Debe realizar su entrega mediante la publicación en un repositorio público en GitHub el cual debe suministrar respondiendo la notificación enviada.
