@@ -7,7 +7,7 @@ El proyecto contiene un sistema de manejo de inventario y facturación para la e
 ## Requerimientos
 
 Los requerimientos comprenden:
-- Realizar el Fork del proyecto donde encontraran:
+- **Realizar el `Fork` del proyecto** donde encontraran:
     - Proyecto Laravel de la aplicación
     - Utilizar el archivo ubicado en la raiz del proyecto `inventory_test.sql` como base de datos.
 - Puesta en marcha de la aplicación.
