@@ -24,7 +24,7 @@ class WarehouseController extends Controller
     public function index()
     {
         $status = Status::where('tabla', 'General')->orderBy('id_status', 'ASC')->pluck('status','id_status');
-    
+
         $warehouse = Warehouse::all();
 
         return view('layouts.warehouse.index', compact('status','warehouse'));
@@ -73,12 +73,12 @@ class WarehouseController extends Controller
         $warehouse->id_status = $request->get('id_status');
 
         if ($request->optionsCheckboxes != null) {
-            $Activity =  implode($request->optionsCheckboxes,",");
+            $Activity =  implode(",",$request->optionsCheckboxes);
             $warehouse->house_activity = $Activity;
         }
 
         $warehouse->house_step = $request->get('step');
-        $warehouse->save(); 
+        $warehouse->save();
 
         session()->put('store','Item created successfully.');
 
@@ -136,15 +136,15 @@ class WarehouseController extends Controller
         if ($request->house_email_three != null) {
             $warehouse->house_email_three = $request->get('house_email_three');
         }
-        
+
         $warehouse->id_status = $request->get('id_status');
 
         if ($request->optionsCheckboxes != null) {
-            $Activity =  implode($request->optionsCheckboxes,",");
+            $Activity =  implode(",",$request->optionsCheckboxes);
             $warehouse->house_activity = $Activity;
         }
         $warehouse->house_step = $request->get('step');
-        $warehouse->save(); 
+        $warehouse->save();
 
         session()->put('update','Item created successfully.');
 

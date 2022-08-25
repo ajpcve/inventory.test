@@ -397,7 +397,7 @@ class SaleInventoryController extends Controller
         //dd($warehouse);
         
 
-        $pdf = PDF::loadView('layouts.inventory.pdf.show-sale', compact('cab_sale_inv', 'det_sale_inv', 'unit', 'inbound_order_det', 'qty', 'warehouse'));
+        $pdf = PDF::loadView('layouts.inventory.pdf.show_sale', compact('cab_sale_inv', 'det_sale_inv', 'unit', 'inbound_order_det', 'qty', 'warehouse'));
 
         return $pdf->stream('BillOfLading-BUFALINDAUSA.pdf');
         //return $pdf->download('listado.pdf');

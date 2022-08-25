@@ -110,14 +110,14 @@
                                                                 {!! Form::select('id_status', $status, $item->id_status, ['class' => 'selectpicker form-group', 'data-style' => 'select-with-transition', 'title' => 'Status', 'data-size' => '7', 'required' => 'true']) !!}
                                                             </div>
                                                         </div>
-                                                            
-                                                            
+
+
                                                         <button type="submit" class="btn btn-success  btn-sm pull-right">Save</button>
                                                         <div class="clearfix"></div>
                                                     </form>
                                                 </div>
                                             </div>
-                                            
+
                                         </div>
                                     </div>
                                 </div>
